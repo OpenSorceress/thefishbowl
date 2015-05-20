@@ -12,7 +12,7 @@ vagrantfile:
                 region: nyc3
                 size: 512mb
                 token: 41b477e03064442f3ba5ac5178413301c4a699f3ed6b32f0b37572e5e77018ee
-                ssh_key_name: Vagrant
+                ssh_key_name: id_rsa
         provision:
             puppet:
                 manifests_path: puphpet/puppet
@@ -26,7 +26,7 @@ vagrantfile:
     ssh:
         host: null
         port: null
-        private_key_path: ~/Development/thefishbowl/puphpet/files/dot/ssh/id_rsa_nokey
+        private_key_path: ~/Development/thefishbowl/puphpet/files/dot/ssh/id_rsa
         username: thegoldfish
         guest_port: null
         keep_alive: true
