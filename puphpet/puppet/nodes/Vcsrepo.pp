@@ -1,5 +1,5 @@
 
-file { '/Users/leah/Development/thefishbowl/puphpet/files/dot/ssh/id_rsa':
+file { '/Users/TheFishbowl/Development/thefishbowl/puphpet/files/dot/ssh/id_rsa':
     ensure => file,
   }
 
@@ -9,6 +9,6 @@ vcsrepo { '/opt/Formula-Stocks':
   provider => git,
   source   => 'git@github.com:LRRoberts0122/Formula-Stocks.git',
   user     => 'thegoldfish',
-  identity => File["/Users/leah/Development/thefishbowl/puphpet/files/dot/ssh/id_rsa"],
+  identity => File["/Users/TheFishbowl/Development/thefishbowl/puphpet/files/dot/ssh/id_rsa"],
 
 }
