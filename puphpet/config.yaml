@@ -26,8 +26,8 @@ vagrantfile:
     ssh:
         host: null
         port: null
-        private_key_path: ~/.ssh/id_rsa_nokey
-        username: leah
+        private_key_path: ~/Development/thefishbowl/puphpet/files/dot/ssh/id_rsa_nokey
+        username: thegoldfish
         guest_port: null
         keep_alive: true
         forward_agent: false
@@ -223,7 +223,7 @@ nodejs:
         - 'body-parser@^1.10.1'
         - 'connect@^3.3.4'
         - 'express@^4.11.0'
-        - 'gulp"@"latest'
+        - 'gulp@^3.8.11'
         - 'mongoose@^3.8.21'
         - 'passport@^0.2.1'
         - 'passport-local@^1.0.0'
