@@ -45,7 +45,7 @@ users_groups:
     users:
         - thefishbowl
 firewall:
-    install: '1'
+    install: '0'
     rules: {  }
 cron:
     install: '1'
@@ -151,7 +151,7 @@ apache:
                             provider: filesmatch
                     provider: directory
 php:
-    install: '1'
+    install: '0'
     settings:
         version: '56'
     modules:
@@ -234,7 +234,9 @@ nodejs:
         - 'grunt-contrib-uglify@^0.8.1'
         - 'grunt-contrib-watch@^0.6.1'
         - 'grunt-express-server@^0.5.1'
+        - 'grunt-ssh@0.12.3'
         - 'node-sass@^2.1.1'
+        - 'forever@0.14.1'
 hhvm:
     install: '0'
     nightly: 0
@@ -251,7 +253,7 @@ hhvm:
         error_reporting: '-1'
         date.timezone: UTC
 mysql:
-    install: '1'
+    install: '0'
     settings:
         version: '5.6'
         root_password: '123'
@@ -289,7 +291,7 @@ mongodb:
         auth: 1
         bind_ip: 127.0.0.1
         port: '27017'
-    databases: {  }
+    databases: { }
 redis:
     install: '0'
     settings:
