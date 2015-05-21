@@ -301,6 +301,7 @@ Puppet::Type.type(:vcsrepo).provide(:git, :parent => Puppet::Provider::Vcsrepo) 
     if @resource.value(:identity)
       Tempfile.open('git-helper') do |f|
         f.puts '#!/bin/sh'
+        f.puts 'ssh-keyscan -H git.example.com >> ~/.ssh/known_hosts'
         f.puts "exec ssh -oStrictHostKeyChecking=no -oPasswordAuthentication=no -oKbdInteractiveAuthentication=no -oChallengeResponseAuthentication=no -oConnectTimeout=120 -i #{@resource.value(:identity)} $*"
         f.close
 

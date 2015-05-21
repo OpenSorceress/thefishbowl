@@ -10,7 +10,7 @@ vagrantfile:
             digital_ocean:
                 image: ubuntu-14-10-x64
                 region: nyc3
-                size: 512mb
+                size: 1g
                 token: 41b477e03064442f3ba5ac5178413301c4a699f3ed6b32f0b37572e5e77018ee
                 ssh_key_name: id_rsa
         provision:
@@ -26,7 +26,7 @@ vagrantfile:
     ssh:
         host: null
         port: null
-        private_key_path: ~/Development/thefishbowl/puphpet/files/dot/ssh/id_rsa
+        private_key_path: ~/Development/prod/puphpet/files/dot/ssh/id_rsa
         username: thegoldfish
         guest_port: null
         keep_alive: true

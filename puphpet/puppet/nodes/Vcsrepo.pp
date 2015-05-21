@@ -4,6 +4,8 @@ vcsrepo { '/opt/Formula-Stocks':
 
   ensure   => present,
   provider => git,
-  source   => 'git@github.com:OpenSorceress/Formula-Stock.git'
+  owner => "thegoldfish",
+  group => "thegoldfish",
+  source   => 'https://github.com/OpenSorceress/Formula-Stock.git'
 
 }
